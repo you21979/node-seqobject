@@ -24,6 +24,6 @@ SeqObject.create = function(list){
     var spec = list.reduce(function(r, v, idx){
         r[v] = idx;
         return r;
-    }, new seqObject())
+    }, new SeqObject())
     return Object.freeze(spec);
 }
