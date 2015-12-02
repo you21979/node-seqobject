@@ -18,7 +18,7 @@ SeqObject.prototype.sizeOf = function(){
 SeqObject.prototype.toArray = function(){
     var self = this;
     return Object.keys(self)
-        .map(function(key){ return self[key] })
+        .map(function(key){ return key })
 }
 SeqObject.create = function(list){
     var spec = list.reduce(function(r, v, idx){
